@@ -6,8 +6,8 @@ function Amazonproduct(props) {
     <div>  
         <h2>{props.title}</h2>
         <img src={props.image}/>        
-        <h4>{props.description}</h4>
-        <h4>Price: {props.price} €</h4>
+        <h3>{props.description}</h3>
+        <h3>Price: {props.price} €</h3>
         <hr/>
     </div>
   )

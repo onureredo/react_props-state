@@ -11,7 +11,7 @@ function App() {
  
   return (
     <div className="App">
-      <h1>AMAZON PRIME SALE</h1>
+      <h1>AMAZON PRIME SALE !</h1>
 
       <Amazonproduct
         title="Amazon Echo"

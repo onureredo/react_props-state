@@ -49,10 +49,23 @@ h1:hover {
 
 h2 {
   font-size: 2.5rem;
-  padding: 2rem 0 2rem 0;
+ 
 }
 
 h3 {
   font-size: 1.5rem;
 }
+.person img {
+  border: 5px solid cornsilk;
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  
+}
+
+.person h3 {
+  font-family: "Ink Free", sans-serif;
+  font-size: 2rem;
+}
+
 

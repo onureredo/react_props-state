@@ -1,8 +1,10 @@
 import './App.css';
 import Amazonproduct from './components/Amazonproduct';
+import Anothercomponent from './components/Anothercomponent';
 import echo from './images/amazonecho.png';
 import firestick from './images/firestick.png';
 import firehd from './images/firehd.png';
+import minion from './images/minion.png';
 
 
 function App() {
@@ -29,6 +31,14 @@ function App() {
         description="12 Hours Battery!"
         image={firehd}
         price={100.99}
+        />
+
+        <Anothercomponent 
+        title="Employee of the Month"
+        name="Joey"
+        job="JR Web-Developer"
+        image={minion}   
+        info="I try to be Creative..."
         />
 
 

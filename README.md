@@ -1,4 +1,4 @@
-## React | using Props & States
+## React Props & State
 
 ## Notes
 

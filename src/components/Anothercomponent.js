@@ -10,7 +10,7 @@ class Anothercomponent extends Component {
         <h2>{title}</h2>
         <h3>{name}</h3>
         <h4>{job}</h4>
-        <img src={image} alt=""/>        
+        <img id="joey" src={image} alt=""/>        
         <h4>{comment}</h4>
         <hr/>
     </div>

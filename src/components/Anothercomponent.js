@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 
-export default class Anothercomponent extends Component {
+class Anothercomponent extends Component {
   render() {
     // Destruction
-    const {title, name, job, image, info} = this.props;
+    const {title, name, job, image, comment} = this.props;
 
     return (
       <div className="person">  
@@ -11,9 +11,11 @@ export default class Anothercomponent extends Component {
         <h3>{name}</h3>
         <h4>{job}</h4>
         <img src={image} alt=""/>        
-        <h4>{info}</h4>
+        <h4>{comment}</h4>
         <hr/>
     </div>
     )
   }
 }
+
+export default Anothercomponent

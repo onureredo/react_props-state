@@ -21,7 +21,7 @@ body {
 }
 
 #joey:hover {
-  animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+  animation: shake 1s infinite cubic-bezier(.36,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
   cursor: none;
   
@@ -75,6 +75,48 @@ hr {
   transition: all 1s;
 }
 
+/* TEXT */
+h1 {
+  transition: all 0.75s;
+  -webkit-text-stroke: 3.5px #d6f4f4;
+  font-variation-settings: "wght" 900, "ital" 1;
+  font-size: 5rem;
+  text-align: center;
+  color: transparent;
+  font-family: "Meta", sans-serif;
+  cursor: default;
+  text-shadow: 
+    10px 10px 0px #07bccc,
+    15px 15px 0px #e601c0,    
+    25px 25px 10px #482896;
+
+}
+
+h1:hover {
+  font-variation-settings: "wght" 100, "ital" 0;
+  text-shadow: none; 
+}
+
+h2 {
+  font-size: 2.5rem; 
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.person img {
+  border: 5px solid cornsilk;
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;  
+}
+
+.person h3 {
+  font-family: "Ink Free", sans-serif;
+  font-size: 2rem;
+}
+
 /* KEYFRAMES FOR THE IMG IN CLASS COMP */
 @keyframes shake {
   10%, 90% {
@@ -94,46 +136,3 @@ hr {
   }
 }
 
-/* TEXT */
-h1 {
-  transition: all 0.75s;
-  -webkit-text-stroke: 5px #d6f4f4;
-  font-variation-settings: "wght" 900, "ital" 1;
-  font-size: 5rem;
-  text-align: center;
-  color: transparent;
-  font-family: "Meta", sans-serif;
-  cursor: default;
-  text-shadow: 
-    10px 10px 0px #07bccc,
-    15px 15px 0px #e601c0,    
-    25px 25px 10px #482896;
-
-}
-
-h1:hover {
-  font-variation-settings: "wght" 100, "ital" 0;
-  text-shadow: none;  
-
-}
-
-h2 {
-  font-size: 2.5rem;
- 
-}
-
-h3 {
-  font-size: 1.5rem;
-}
-.person img {
-  border: 5px solid cornsilk;
-  border-radius: 50%;
-  width: 220px;
-  height: 220px;
-  
-}
-
-.person h3 {
-  font-family: "Ink Free", sans-serif;
-  font-size: 2rem;
-}

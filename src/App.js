@@ -39,7 +39,7 @@ function App() {
         name="Joey"
         job="JR Web-Developer"
         image={minion}   
-        comment="Joey's comment: I try to be Creative..."
+        comment="Joey's comment: I try to be Creative to make it more enjoyable..."
       />
 
       <button 

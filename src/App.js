@@ -1,23 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import Amazonproduct from './components/Amazonproduct';
+import echo from './images/amazonecho.png';
+import firestick from './images/firestick.png';
+import firehd from './images/firehd.png';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>AMAZON PRIME SALE</h1>
+      
+      <Amazonproduct
+        title="Amazon Echo"
+        description="Your Home Assistant"
+        image={echo}
+        price={74.99}
+        />
+
+        <Amazonproduct
+        title="Amazon Fire Stick 4K"
+        description="Stream in 4K"
+        image={firestick}
+        price={59.99}
+        />
+
+        <Amazonproduct
+        title="Amazon Fire HD 10' Tablet"
+        description="12 Hours Battery!"
+        image={firehd}
+        price={100.99}
+        />
+
+
     </div>
   );
 }

@@ -75,6 +75,23 @@ hr {
   transition: all 1s;
 }
 
+#btn_show {
+  border: none; 
+  outline: none; 
+  background-color: #8d5dd1;
+  color: white; 
+  cursor: pointer; 
+  padding: 15px;
+  margin: 20px 0 20px 0;
+  border-radius: 50%; 
+  font-size: 25px; 
+}
+
+#btn_show:hover {
+  background-color: #555; 
+  transition: all 1s;
+}
+
 /* TEXT */
 h1 {
   transition: all 0.75s;
@@ -115,6 +132,12 @@ h3 {
 .person h3 {
   font-family: "Ink Free", sans-serif;
   font-size: 2rem;
+}
+
+.person h4 {
+  font-family: "Ink Free", sans-serif;
+  font-style:italic;
+  font-size: 1.25rem;
 }
 
 /* KEYFRAMES FOR THE IMG IN CLASS COMP */

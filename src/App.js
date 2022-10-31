@@ -17,21 +17,21 @@ function App() {
         title="Amazon Echo"
         description="Your Home Assistant"
         image={echo}
-        price={74.99}
+        price={54.99}
       />
 
       <Amazonproduct
         title="Amazon Fire Stick 4K"
         description="Stream in 4K"
         image={firestick}
-        price={59.99}
+        price={39.99}
       />
 
       <Amazonproduct
         title="Amazon Fire HD 10' Tablet"
         description="12 Hours Battery"
         image={firehd}
-        price={100.99}
+        price={89.99}
       />
 
       <Anothercomponent 
@@ -39,7 +39,7 @@ function App() {
         name="Joey"
         job="JR Web-Developer"
         image={minion}   
-        comment="Joey's comment: I try to be Creative to make it more enjoyable..."
+        comment='„I love working with React...“'
       />
 
       <button 

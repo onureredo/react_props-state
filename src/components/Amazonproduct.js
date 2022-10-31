@@ -1,6 +1,9 @@
 import React from 'react'
 
 function Amazonproduct(props) {
+  
+  // Destructing
+  // const {title, image, description, price} = props;
     
   return (
     <div>  

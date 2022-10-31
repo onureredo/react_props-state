@@ -4,7 +4,7 @@ class EmployeeOfMonth extends Component {
 
   constructor(props) {
     super(props);
-
+    
     this.state = {
       isVisible : false
     }
@@ -20,6 +20,7 @@ class EmployeeOfMonth extends Component {
     // Destruction
     const {title, name, job, image, comment} = this.props;
     const {isVisible} = this.state;
+   
     
     return (
       <div>

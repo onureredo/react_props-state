@@ -17,29 +17,29 @@ function App() {
         title="Amazon Echo"
         description="Your Home Assistant"
         image={echo}
-        price={54.99}
+        price={74.99}
       />
 
       <Amazonproduct
         title="Amazon Fire Stick 4K"
         description="Stream in 4K"
         image={firestick}
-        price={39.99}
+        price={59.99}
       />
 
       <Amazonproduct
         title="Amazon Fire HD 10' Tablet"
         description="12 Hours Battery"
         image={firehd}
-        price={89.99}
+        price={100.99}
       />
 
-      <EmployeeOfMonth 
+<EmployeeOfMonth 
         title="Employee of the Month"
         name="Joey"
         job="JR Web-Developer"
         image={minion}   
-        comment='„I love working with React...“'
+        comment='„I love working with ReactJS... “'
       />
 
       <button 

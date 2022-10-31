@@ -6,17 +6,14 @@
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #1b1b1b;      
   display: flex;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  color: white;
-  flex-direction: column;
   flex-wrap: wrap;
+  flex-direction: column;
   align-content: center;
+  text-align: center; 
+  background-color: #1b1b1b;      
+  font-family: "Montserrat", sans-serif;
+  color: white;
   
 }
 
@@ -24,11 +21,39 @@ body {
   animation: shake 1s infinite cubic-bezier(.36,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
   cursor: none;
-  
+
 }
 
 .products {
   border-bottom: 3px solid #8d5dd1;
+  
+}
+
+.person img {
+  border: 5px solid cornsilk;
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+
+}
+
+/* KEYFRAMES */
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(50px, 0, 0);
+  }
 }
 
 /* BUTTONS */
@@ -66,11 +91,13 @@ body {
   padding: 10px; 
   border-radius: 50%; 
   font-size: 25px; 
+
 }
 
 #btn_down:hover {
   background-color: #555; 
   transition: all 1s;
+
 }
 
 #btn_show {
@@ -83,11 +110,13 @@ body {
   margin: 20px 0 20px 0;
   border-radius: 50%; 
   font-size: 25px; 
+
 }
 
 #btn_show:hover {
   background-color: #555; 
   transition: all 1s;
+
 }
 
 /* TEXT */
@@ -104,7 +133,6 @@ h1 {
     10px 10px 0px #07bccc,
     15px 15px 0px #e601c0,    
     25px 25px 10px #482896;
-
 }
 
 h1:hover {
@@ -120,13 +148,6 @@ h3 {
   font-size: 1.5rem;
 }
 
-.person img {
-  border: 5px solid cornsilk;
-  border-radius: 50%;
-  width: 220px;
-  height: 220px;  
-}
-
 .person h3 {
   font-family: "Ink Free", sans-serif;
   font-size: 2rem;
@@ -138,21 +159,3 @@ h3 {
   font-size: 1.25rem;
 }
 
-/* KEYFRAMES FOR THE IMG IN CLASS COMP */
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-
-  40%, 60% {
-    transform: translate3d(50px, 0, 0);
-  }
-}

@@ -17,28 +17,44 @@ body {
   
 }
 
-#joey:hover {
+#joey {
+  border: 5px solid cornsilk;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+
+}
+
+#joey {  
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  cursor: none;
+}
+
+#bob {
+  border: 5px solid cornsilk;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+
+}
+
+.products {
+  border: 3px solid #8d5dd1;
+  margin-top: 5rem;
+
+}
+
+/* KEYFRAMES 
+
+ #joey:hover {
   animation: shake 1s infinite cubic-bezier(.36,.07,.19,.97) both;
   transform: translate3d(0, 0, 0);
   cursor: none;
 
 }
 
-.products {
-  border-bottom: 3px solid #8d5dd1;
-  
-}
-
-.person img {
-  border: 5px solid cornsilk;
-  border-radius: 50%;
-  width: 220px;
-  height: 220px;
-
-}
-
-/* KEYFRAMES */
-@keyframes shake {
+ @keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
@@ -54,6 +70,21 @@ body {
   40%, 60% {
     transform: translate3d(50px, 0, 0);
   }
+} */
+
+/* SHAKE 2 */
+@keyframes shake {
+  0% { transform: translate(3px, 3px) rotate(0deg); }
+  10% { transform: translate(-3px, -2px) rotate(-3deg); }
+  20% { transform: translate(-3px, 0px) rotate(3deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(3px, -3px) rotate(3deg); }
+  50% { transform: translate(-3px, 2px) rotate(-3deg); }
+  60% { transform: translate(-3px, 3px) rotate(0deg); }
+  70% { transform: translate(3px, 3px) rotate(-3deg); }
+  80% { transform: translate(-3px, -3px) rotate(3deg); }
+  90% { transform: translate(3px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
 /* BUTTONS */
@@ -106,11 +137,13 @@ body {
   background-color: #8d5dd1;
   color: white; 
   cursor: pointer; 
-  padding: 15px;
-  margin: 20px 0 20px 0;
-  border-radius: 50%; 
-  font-size: 25px; 
-
+  padding: 20px;
+  margin: 10px 0 20px 0;
+  border-radius: 10px; 
+  font-size: 20px; 
+  font-family: "Montserrat";
+  font-weight: 900;
+  
 }
 
 #btn_show:hover {
@@ -120,7 +153,7 @@ body {
 }
 
 /* TEXT */
-h1 {
+#title {
   transition: all 0.75s;
   -webkit-text-stroke: 3.5px #d6f4f4;
   font-variation-settings: "wght" 900, "ital" 1;
@@ -135,7 +168,7 @@ h1 {
     25px 25px 10px #482896;
 }
 
-h1:hover {
+#title:hover {
   font-variation-settings: "wght" 100, "ital" 0;
   text-shadow: none; 
 }
@@ -148,14 +181,15 @@ h3 {
   font-size: 1.5rem;
 }
 
-.person h3 {
-  font-family: "Ink Free", sans-serif;
-  font-size: 2rem;
+#ph1 {
+  font-family: "Meta";
+  font-size: 3.5rem;
+  box-shadow: inset 0 0 0 0 #8d5dd1;
+  color: #8d5dd1;  
+  transition: color 1.3s ease-in-out, box-shadow 1.3s ease-in-out;
 }
-
-.person h4 {
-  font-family: "Ink Free", sans-serif;
-  font-style:italic;
-  font-size: 1.25rem;
+#ph1:hover {
+  box-shadow: inset 1000px 0 0 0 #8d5dd1;
+  color: white;
+  
 }
-

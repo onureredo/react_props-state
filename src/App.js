@@ -1,6 +1,6 @@
 import './App.css';
 import Amazonproduct from './components/Amazonproduct';
-import Anothercomponent from './components/Anothercomponent';
+import EmployeeOfMonth from './components/EmployeeOfMonth';
 import echo from './images/amazonecho.png';
 import firestick from './images/firestick.png';
 import firehd from './images/firehd.png';
@@ -34,7 +34,7 @@ function App() {
         price={89.99}
       />
 
-      <Anothercomponent 
+      <EmployeeOfMonth 
         title="Employee of the Month"
         name="Joey"
         job="JR Web-Developer"

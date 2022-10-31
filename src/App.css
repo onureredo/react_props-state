@@ -27,11 +27,9 @@ body {
   
 }
 
-hr {
-  margin-top: 5rem;
-  width: 100vh;
+.products {
+  border-bottom: 3px solid #8d5dd1;
 }
-
 
 /* BUTTONS */
 #btn_top {  
@@ -158,4 +156,3 @@ h3 {
     transform: translate3d(50px, 0, 0);
   }
 }
-

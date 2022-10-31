@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import joey from '../images/minion.png'
 import bob from '../images/minion2.png'
-class EmployeeOfMonth extends Component {
+class Team extends Component {
 
   constructor() {
     super()    
@@ -48,4 +48,4 @@ class EmployeeOfMonth extends Component {
   }
 }
 
-export default EmployeeOfMonth
+export default Team

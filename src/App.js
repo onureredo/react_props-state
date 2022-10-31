@@ -1,6 +1,6 @@
 import './App.css';
 import Amazonproduct from './components/Amazonproduct';
-import EmployeeOfMonth from './components/EmployeeOfMonth';
+import Team from './components/Team';
 import echo from './images/amazonecho.png';
 import firestick from './images/firestick.png';
 import firehd from './images/firehd.png';
@@ -33,7 +33,7 @@ function App() {
         price='100,99'
       />
 
-      <EmployeeOfMonth />
+      <Team />
 
       <button 
           onClick={() => {

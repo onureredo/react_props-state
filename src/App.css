@@ -14,7 +14,11 @@ body {
   background-color: #1b1b1b;      
   font-family: "Montserrat", sans-serif;
   color: white;
-  
+}
+
+/* HIDE SCROLLBAR BUT KEEP THE FUNCTIONALITY */
+body::-webkit-scrollbar {
+  display: none;
 }
 
 #kevin {
@@ -23,24 +27,19 @@ body {
   width: 280px;
   height: 280px;
   animation: shake 0.5s;
-  animation-iteration-count: infinite;
-  cursor: none;
-
+  animation-iteration-count: infinite;  
 }
-
 
 #bob {
   border: 5px solid cornsilk;
   border-radius: 50%;
   width: 280px;
   height: 280px;
-
 }
 
 .products {
   border: 3px solid #8d5dd1;
   margin-top: 5rem;
-
 }
 
 /* SHAKE ANIMATION*/
@@ -72,7 +71,6 @@ body {
   padding: 10px; 
   border-radius: 50%; 
   font-size: 25px; 
-
 }
 
 #btn_top:hover {
@@ -93,13 +91,11 @@ body {
   padding: 10px; 
   border-radius: 50%; 
   font-size: 25px; 
-
 }
 
 #btn_down:hover {
   background-color: #555; 
   transition: all 1s;
-
 }
 
 #btn_show {
@@ -113,14 +109,12 @@ body {
   border-radius: 10px; 
   font-size: 20px; 
   font-family: "Montserrat";
-  font-weight: 900;
-  
+  font-weight: 900;  
 }
 
 #btn_show:hover {
   background-color: #555; 
   transition: all 1s;
-
 }
 
 /* TEXT */
@@ -144,17 +138,9 @@ body {
   text-shadow: none; 
 }
 
-h2 {
-  font-size: 2.5rem; 
-}
-
-h3 {
-  font-size: 1.5rem;
-}
 .person {
   border: 3px solid #FFD55E;
-  margin: 5rem 0 5rem 0;
- 
+  margin: 5rem 0 5rem 0; 
 }
 
 .person h1 {
@@ -164,9 +150,21 @@ h3 {
   transition: color 1.3s ease-in-out, box-shadow 1.3s ease-in-out;
   text-transform: uppercase;
 }
+
 .person h1:hover {
   box-shadow: inset 1000px 0 0 0 #FFD55E;
   color: white;
-  cursor: default;
-  
+  cursor: default;  
+}
+
+.person h3 {
+  font-style:italic;
+}
+
+h2 {
+  font-size: 2.5rem; 
+}
+
+h3 {
+  font-size: 1.5rem;
 }

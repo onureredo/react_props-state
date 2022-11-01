@@ -5,14 +5,13 @@ class Team extends Component {
 
   constructor() {
     super()    
-    this.state = {
+    this.state = ({
       title: "Meet Our Team" , 
       name: "Bob",
       job: "Junior Web Developer!",
       image: <img id="bob"src={bob} alt="" /> ,
       comment: "Let's code together folks!"
-
-    }
+    });
   }
 
   changeEmployee() {
@@ -21,9 +20,8 @@ class Team extends Component {
       name: "Joey",
       job: "Functional Tester",
       image: <img id="joey"src={joey} alt="" /> ,
-      comment: 'I found another bug! BOOOB!'
-      
-    })
+      comment: 'I found another bug! BOOOB!'      
+    });
   }
  
   render() {

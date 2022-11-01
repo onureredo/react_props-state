@@ -1,5 +1,6 @@
 import './App.css';
 import Amazonproduct from './components/Amazonproduct';
+import AmazonproductC from './components/AmazonproductC';
 import Team from './components/Team';
 import echo from './assets/images/amazonecho.png'
 import firestick from './assets/images/firestick.png'
@@ -9,7 +10,14 @@ function App() {
  
   return (
     <div className="App">
-      <h1 id="title">AMAZON PRIME SALE !</h1>
+
+      <AmazonproductC 
+        title="AMAZON PRIME SALE ! "
+      />
+
+      <AmazonproductC
+        title="BIG DISCOUNT!!!"
+      />    
             
       <Amazonproduct
         title="Amazon Echo"

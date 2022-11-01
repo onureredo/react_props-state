@@ -17,7 +17,7 @@ body {
   
 }
 
-#joey {
+#kevin {
   border: 5px solid cornsilk;
   border-radius: 50%;
   width: 280px;
@@ -157,14 +157,14 @@ h3 {
  
 }
 
-#ph1 {
+.person h1 {
   font-family: "Meta";
   font-size: 3.5rem;  
   color: white;
   transition: color 1.3s ease-in-out, box-shadow 1.3s ease-in-out;
   text-transform: uppercase;
 }
-#ph1:hover {
+.person h1:hover {
   box-shadow: inset 1000px 0 0 0 #FFD55E;
   color: white;
   cursor: default;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import joey from '../images/minion.png'
-import bob from '../images/minion2.png'
+import bob from '../assets/images/minion2.png'
+import kevin from '../assets/images/minion.png'
 class Team extends Component {
 
   constructor() {
@@ -10,17 +10,16 @@ class Team extends Component {
       name: "Bob",
       job: "Junior Web Developer!",
       image: <img id="bob"src={bob} alt="" /> ,
-      comment: "Let's code together folks!"
+      comment: "Let's code together folks! 💻"
     });
   }
 
   changeEmployee() {
-    this.setState({
-      title: "Meet Our Team" , 
-      name: "Joey",
+    this.setState({      
+      name: "Kevin",
       job: "Functional Tester",
-      image: <img id="joey"src={joey} alt="" /> ,
-      comment: 'I found another bug! BOOOB!'      
+      image: <img id="kevin"src={kevin} alt="" /> ,
+      comment: 'Another bug... BOOOB! 😡😡😡' 
     });
   }
  
@@ -30,7 +29,7 @@ class Team extends Component {
 
     return ( 
       <div className="person">          
-        <h1 id="ph1">{this.state.title}</h1>        
+        <h1>{this.state.title}</h1>        
         <h2>{this.state.name}</h2>
         <h2>{this.state.image}</h2> 
         <h2>{this.state.job}</h2>

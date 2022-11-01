@@ -1,37 +1,36 @@
 import './App.css';
 import Amazonproduct from './components/Amazonproduct';
 import Team from './components/Team';
-import echo from './images/amazonecho.png';
-import firestick from './images/firestick.png';
-import firehd from './images/firehd.png';
+import echo from './assets/images/amazonecho.png'
+import firestick from './assets/images/firestick.png'
+import firehd from './assets/images/firehd.png'
 
 function App() {
  
   return (
     <div className="App">
-
       <h1 id="title">AMAZON PRIME SALE !</h1>
-
+            
       <Amazonproduct
         title="Amazon Echo"
         description="Your Home Assistant"
         image={echo}
-        price='74,99'
+        price='$ 74,99'
       />
 
       <Amazonproduct
         title="Amazon Fire Stick 4K"
         description="Stream in 4K"
         image={firestick}
-        price='59,99'
+        price='$ 59,99'
       />
 
       <Amazonproduct
         title="Amazon Fire HD 10' Tablet"
         description="12 Hours Battery"
         image={firehd}
-        price='100,99'
-      />
+        price='$ 100,99'
+      /> 
 
       <Team />
 

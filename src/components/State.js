@@ -1,87 +1,53 @@
-import React, { useState } from 'react'
-import echo from '../assets/images/echo.png'
-import firestick from '../assets/images/firestick.png'
-import firehd from '../assets/images/firehd.png'
-import smartled from '../assets/images/smartled.png'
+import React, { useState } from "react";
+import { inventory } from "../utils/utils";
 
-function State() {
+const State = () => {
+  const [products] = useState(inventory);
+  const [price, setPrice] = useState(0);
+  const [start, setStart] = useState(0);
 
-  const [price, setPrice] = useState(50);
+  const previous = () => start !== 0 && setStart((prev) => prev - 3);
 
-  const handleInput = (e) => {
-    setPrice(e.target.value);
-  };
-    
-    const products = [
-      { id: 1,
-        title: "Amazon Echo",
-        image: <img src={echo} alt=""/>,
-        description: 'Your Home Assistant',
-        price: 59.99,    
-      },
-      { id: 2,
-        title: "Amazon Firestick",
-        image: <img src={firestick} alt=""/>,
-        description: 'Stream in 4K',
-        price: 84.99,    
-      },
-      
-      { id: 3,
-        title: "Fire HD 10'",
-        image: <img src={firehd} alt="" />,
-        description: '12H Battery',
-        price: 74.99,    
-      },
-      
-      { id: 3,
-        title: "Smart LED Light Bar",
-        image: <img src={smartled} alt="" />,
-        description: 'Easy connection to Alexa',
-        price: 74.99,    
-      } 
-         
-    ];
+  const next = () => setStart((prev) => prev + 3);
 
-    return (
-      <div className='container'>        
-        <div className="range">
-          <input type="range" onInput={handleInput}></input>
-          <h3>Sort by: $ {price}</h3>
-        </div>
-        <div className="product_container">
-        <button  id="btn_show">◀</button>
+  const handleInput = (e) => setPrice(e.target.value);
+
+  return (
+    <div className="container">
+      <div className="range">
+        <input type="range" onInput={handleInput} max={250}></input>
+        <h3>Sort by: $ {price}</h3>
+      </div>
+      <div className="product_container">
+        <button id="btn_show" onClick={previous} disabled={start === 0}>
+          ◀
+        </button>
         {/* onClick={() => changeProduct()} */}
-          {
-          products.filter((product) => {
+
+        {products
+          .filter((product) => {
             return product.price > parseInt(price, 0);
           })
+          .slice(start, start + 3)
           .map((product) => {
             return (
-              <>
-                <div className='products'>
-                  <h1 key={product.id}> {product.title} </h1>
-                  {product.image}
-                  <h3>{product.description}</h3>
-                  <h4>Price: $ {product.price}</h4>                  
-                </div>
-              </>
-            )
-          })
-        }
-        <button id="btn_show">▶</button>
+              <div className="products" key={product.id}>
+                <h1>{product.title}</h1>
+                <img src={product.image} />
+                <h3>{product.description}</h3>
+                <h4>Price: $ {product.price}</h4>
+              </div>
+            );
+          })}
+        <button id="btn_show" onClick={next} disabled={start === products.length - 1}
+        >
+          ▶
+        </button>
         {/* onClick={() => changeProduct()}  */}
-        </div>    
-        
+      </div>
+      <div className="addItem"></div>
     </div>
-      
-      
-      
-      
-    )
-  }
+  );
+};
 
-export default State
-
-
-
-
+export default State;

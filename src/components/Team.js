@@ -54,7 +54,8 @@ class Team extends Component {
         <div>
           <button onClick={() => this.nextEmployee()} 
                   id="btn_show" 
-                  title="Next">▶</button>
+                  title="Next">▶
+          </button>
         </div>      
       </div>
     )

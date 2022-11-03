@@ -1,14 +1,12 @@
 import React from 'react'
 
-
-function Amazonproduct(props) {
-  
+function Amazonproduct(props) {  
   // Destructing
   // const {title, image, description, price} = props;
     
   return (
     <div className='products'>  
-        <h2>{props.title}</h2>
+        <h1 id="title">{props.title}</h1>
         <img src={props.image} alt=""/>        
         <h3>{props.description}</h3>
         <h3>{props.price}</h3>        

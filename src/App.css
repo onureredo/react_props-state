@@ -7,10 +7,10 @@
 
 body {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-content: center;
-  text-align: center; 
+  text-align: center;
+  justify-content: center;
   background-color: #1b1b1b;      
   font-family: "Montserrat", sans-serif;
   color: white;
@@ -21,25 +21,38 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.app {
+  height: 100vh;
+}
+
+.product_container {  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #8d5dd1;
+  height: 60vh;
+}
+
+.products img {
+  max-width: 60%;
+  
+}
+
 #kevin {
-  border: 5px solid cornsilk;
+  /* border: 5px solid cornsilk; */
   border-radius: 50%;
-  width: 280px;
-  height: 280px;
+  width: 350px;
+  height: 350px;
   animation: shake 0.5s;
   animation-iteration-count: infinite;  
 }
 
 #bob {
-  border: 5px solid cornsilk;
+  /* border: 5px solid cornsilk; */
   border-radius: 50%;
-  width: 280px;
-  height: 280px;
-}
-
-.products {
-  border: 3px solid #8d5dd1;
-  margin-top: 5rem;
+  width: 350px;
+  height: 350px;
 }
 
 /* SHAKE ANIMATION*/
@@ -105,7 +118,7 @@ body::-webkit-scrollbar {
   color: white; 
   cursor: pointer; 
   padding: 20px;
-  margin: 10px 0 20px 0;
+  margin: 10px 20px 20px 0;
   border-radius: 10px; 
   font-size: 20px; 
   font-family: "Montserrat";
@@ -117,12 +130,16 @@ body::-webkit-scrollbar {
   transition: all 1s;
 }
 
+input[type=range] {  
+  margin: 1rem 0 0.5rem 0;
+}
+
 /* TEXT */
 #title {
   transition: all 0.75s;
   -webkit-text-stroke: 3.5px #d6f4f4;
   font-variation-settings: "wght" 900, "ital" 1;
-  font-size: 5rem;
+  font-size: 3.5rem;
   text-align: center;
   color: transparent;
   font-family: "Meta", sans-serif;
@@ -138,12 +155,16 @@ body::-webkit-scrollbar {
   text-shadow: none; 
 }
 
-.person {
-  border: 3px solid #FFD55E;
-  margin: 5rem 0 5rem 0; 
+.team_container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0 5rem 0;
+  border: 3px solid #FFD55E; 
 }
 
-.person h1 {
+.team_container h1 {
   font-family: "Meta";
   font-size: 3.5rem;  
   color: white;
@@ -151,13 +172,14 @@ body::-webkit-scrollbar {
   text-transform: uppercase;
 }
 
-.person h1:hover {
+.team_container h1:hover {
   box-shadow: inset 1000px 0 0 0 #FFD55E;
   color: white;
   cursor: default;  
 }
 
-.person h3 {
+.team_container,
+.products h3 {
   font-style:italic;
 }
 

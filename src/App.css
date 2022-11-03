@@ -118,7 +118,7 @@ body::-webkit-scrollbar {
   color: white; 
   cursor: pointer; 
   padding: 20px;
-  margin: 10px 20px 20px 0;
+  margin: 0 2rem 0 2rem;
   border-radius: 10px; 
   font-size: 20px; 
   font-family: "Montserrat";
@@ -135,7 +135,7 @@ input[type=range] {
 }
 
 /* TEXT */
-#title {
+#prime h1 {
   transition: all 0.75s;
   -webkit-text-stroke: 3.5px #d6f4f4;
   font-variation-settings: "wght" 900, "ital" 1;
@@ -150,7 +150,7 @@ input[type=range] {
     25px 25px 10px #482896;
 }
 
-#title:hover {
+#prime h1:hover {
   font-variation-settings: "wght" 100, "ital" 0;
   text-shadow: none; 
 }
@@ -183,6 +183,10 @@ input[type=range] {
   font-style:italic;
 }
 
+.products h4 {
+  font-size: 1.15rem;
+}
+
 h2 {
   font-size: 2.5rem; 
 }
@@ -190,3 +194,4 @@ h2 {
 h3 {
   font-size: 1.5rem;
 }
+

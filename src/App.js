@@ -1,7 +1,8 @@
 import './App.css';
-import Amazonproduct from './components/Amazonproduct';
+import Amazonproduct from './components/Amazonproduct'
 import State from './components/State';
 import Team from './components/Team'
+// import Scrollbutton from './components/Scrollbutton'
 
 function App() {
  
@@ -13,6 +14,7 @@ function App() {
 
       <State />
       <Team />
+      {/* <Scrollbutton /> */}
 
 
     </div>

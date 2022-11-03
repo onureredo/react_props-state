@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { inventory } from "../utils/utils";
+import { products } from "../utils/utils";
 
 const State = () => {
-  const [products] = useState(inventory);
+  
   const [price, setPrice] = useState(0);
   const [start, setStart] = useState(0);
 

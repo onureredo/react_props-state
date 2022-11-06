@@ -19,10 +19,8 @@ const State = () => {
         <h3>Sort by: $ {price}</h3>
       </div>
       <div className="product_container">
-        <button id="btn_show" onClick={previous} disabled={start === 0}>
-          ◀
-        </button>
-        {/* onClick={() => changeProduct()} */}
+        <button id="btn_show" onClick={previous} disabled={start === 0}>◀</button>
+        
 
         {products
           .filter((product) => {
@@ -33,19 +31,15 @@ const State = () => {
             return (
               <div className="products" key={product.id}>
                 <h1>{product.title}</h1>
-                <img src={product.image} />
+                <img src={product.image} alt="" />
                 <h3>{product.description}</h3>
                 <h4>Price: $ {product.price}</h4>
               </div>
             );
           })}
-        <button id="btn_show" onClick={next} disabled={start === products.length - 1}
-        >
-          ▶
-        </button>
-        {/* onClick={() => changeProduct()}  */}
-      </div>
-      <div className="addItem"></div>
+        <button id="btn_show" onClick={next} disabled={start === products.length - 1}>▶</button>
+        
+      </div>      
     </div>
   );
 };

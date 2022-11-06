@@ -36,16 +36,17 @@ export const products = [
   },
   {
     id: 6,
-    title: "Lenovo Ideapad",
-    image: "/images/ideapad.png",
-    description: "Box of Amazon electronic returns",
-    price: 249.99,
+    title: "LED Ring Light",
+    image: "/images/ringlight.png",
+    description: "With Clip & Tripod",
+    price: 19.99,
+    
   },
   {
     id: 7,
     title: "Lenovo Ideapad",
     image: "/images/ideapad.png",
-    description: "Box of Amazon electronic returns",
+    description: "2-in-1 Tablet incl. Pen",
     price: 249.99,
   },
 ];

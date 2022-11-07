@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { products } from "../utils/utils";
 
-const State = () => {
+const Amazonproducts = () => {
   
   const [price, setPrice] = useState(0);
   const [start, setStart] = useState(0);
@@ -42,11 +42,10 @@ const State = () => {
               </div>
             );
           })}
-        <button id="btn_show" onClick={next} disabled={start === products.length - 1}>▶</button>
-        
+        <button id="btn_show" onClick={next} disabled={start === products.length - 1}>▶</button>        
       </div>      
     </div>
-  );
+  )
 };
 
-export default State;
+export default Amazonproducts

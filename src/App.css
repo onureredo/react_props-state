@@ -35,17 +35,14 @@ body::-webkit-scrollbar {
 }
 
 .products img {
-  max-width: 60%;
-  
+  max-width: 60%;  
 }
 
 .person img {
   border-radius: 50%;
   width: 350px;
-  height: 350px;
-  
+  height: 350px;  
 }
-
 
 #kevin {
   /* border: 5px solid cornsilk; */
@@ -53,9 +50,7 @@ body::-webkit-scrollbar {
   width: 350px;
   height: 350px;
   animation: shake 0.5s;
-  animation-iteration-count: infinite; 
-  
-  
+  animation-iteration-count: infinite;   
 }
 
 #bob {
@@ -64,8 +59,6 @@ body::-webkit-scrollbar {
   width: 350px;
   height: 350px;
 }
-
-
 
 /* SHAKE ANIMATION*/
 @keyframes shake {

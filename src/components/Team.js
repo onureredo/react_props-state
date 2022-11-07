@@ -15,14 +15,13 @@ function Team() {
                 name: "Kevin",
                 image: "/images/kevin.png",
                 job: "Functional Tester",
-                comment: "Another bug... 😡😡😡"
+                comment: `"Another bug... 😡😡😡"`
             }
           })
         };
 
   return (
-    <div className='team_container'>
-        
+    <div className='team_container'>        
         <div className='person'>
             <h1>{team.title}</h1>
             <h2>{team.name}</h2>

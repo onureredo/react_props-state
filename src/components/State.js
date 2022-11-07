@@ -9,7 +9,7 @@ const State = () => {
 
   const handleInput = (e) => setPrice(e.target.value);
 
-  const previous = () => start !== 0 && setStart((prev) => prev - 3);
+  const previous = () => setStart((prev) => prev - 3);
   const next = () => setStart((prev) => prev + 3);
 
   
@@ -17,13 +17,13 @@ const State = () => {
   return (
     <div className="container">
       <div className="range">
-
-        <input type="range" onInput={handleInput} max={250}></input>
-        <h3>Sort by: $ {price}</h3>
-
+      {/* RANGE INPUT TO FILTER THROUGH PRICES */}
+        <input type="range" onInput={handleInput} max={200}></input>
+        <h3>Filter by: $ {price}</h3>
       </div>
-      <div className="product_container">
 
+      {/* PRODUCT CONTAINER | METHODS: filter, slice & map */}
+      <div className="product_container">
         <button id="btn_show" onClick={previous} disabled={start === 0}>◀</button>        
 
         {

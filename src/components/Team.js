@@ -15,10 +15,10 @@ function Team() {
                 name: "Kevin",
                 image: "/images/kevin.png",
                 job: "Functional Tester",
-                comment: "Another bug... BOOOB! 😡😡😡"
+                comment: "Another bug... 😡😡😡"
             }
-        });
-      };
+          })
+        };
 
   return (
     <div className='team_container'>

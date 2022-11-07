@@ -151,11 +151,11 @@ input[type=range] {
 
 /* TEXT */
 #prime h1 {
-  width: 100%;
+  max-width: 100%;
   transition: all 0.75s;
   -webkit-text-stroke: 3.5px #d6f4f4;
   font-variation-settings: "wght" 900, "ital" 1;
-  font-size: 3.5rem;
+  font-size: 4rem;
   text-align: center;
   color: transparent;
   font-family: "Meta", sans-serif;

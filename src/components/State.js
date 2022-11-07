@@ -26,7 +26,8 @@ const State = () => {
 
         <button id="btn_show" onClick={previous} disabled={start === 0}>◀</button>        
 
-        {products
+        {
+        products
           .filter((product) => {
             return product.price > parseInt(price, 0);
           })

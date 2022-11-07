@@ -18,9 +18,9 @@ function Searchbar(props) {
     <div className='searchbar'>     
         <div className='searchinput'><input type="text" placeholder={props.placeholder} onChange={handleFilter} /> 
         </div> 
-        {filteredData.length !=0 && (
+        {filteredData.length !== 0 && (
         <div className='searchresult'>
-            {filteredData.slice(0, 15).map((products, key) => {
+            {filteredData.slice(0, 15).map((products) => {
                 return (
                     <p>{products.title}</p>
                         

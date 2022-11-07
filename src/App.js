@@ -1,8 +1,8 @@
 import Firststeps from './Components/Firststeps';
 import State from './Components/State';
 import Team from './Components/Team'
-import Searchbar from './Components/Searchbar';
 import './App.css';
+import Searchbar from './Components/Searchbar';
 
 
 function App() {
@@ -10,12 +10,12 @@ function App() {
   return (
     <div className="App">
       <div id='prime'><h1>AMAZON PRIME SALE !</h1></div>
-      
-      <Searchbar placeholder="What are you looking for ?"/>
 
+      <Searchbar placeholder="What are you looking for?" />
       <State />
       <Team />
       <Firststeps />
+
       
     </div>
   );

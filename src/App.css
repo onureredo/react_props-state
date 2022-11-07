@@ -70,6 +70,20 @@ body::-webkit-scrollbar {
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
+/* SEARCHBAR */
+
+.searchbar input{
+  background-color: white;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  font-size: 18px;
+  padding: 15px;
+  height: 30px;
+  width: 350px;
+  margin-bottom: 1rem;
+}
+
 /* BUTTONS */
 #btn_top {  
   position: fixed; 

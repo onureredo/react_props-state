@@ -9,9 +9,9 @@ function App() {
  
   return (
     <div className="App">
-      <div id='prime'><h1>AMAZON PRIME SALE !</h1></div>
+      <h1 id='prime'>AMAZON PRIME SALE !</h1>
 
-      <Searchbar placeholder="What are you looking for?" />
+      {/* <Searchbar placeholder="What are you looking for?" /> */}
       <State />
       <Team />
       <Firststeps />

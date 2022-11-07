@@ -150,8 +150,7 @@ input[type=range] {
 }
 
 /* TEXT */
-#prime h1 {
-  max-width: 100%;
+#prime  {
   transition: all 0.75s;
   -webkit-text-stroke: 3.5px #d6f4f4;
   font-variation-settings: "wght" 900, "ital" 1;
@@ -159,14 +158,14 @@ input[type=range] {
   text-align: center;
   color: transparent;
   font-family: "Meta", sans-serif;
-  cursor: default;
+  cursor: default;  
   text-shadow: 
     10px 10px 0px #07bccc,
     15px 15px 0px #e601c0,    
     25px 25px 10px #482896;
 }
 
-#prime h1:hover {
+#prime:hover {
   font-variation-settings: "wght" 100, "ital" 0;
   text-shadow: none; 
 }

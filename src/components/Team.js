@@ -1,65 +1,49 @@
-import React, { Component } from 'react'
-import bob from '../assets/images/minion2.png'
-import kevin from '../assets/images/minion.png'
-class Team extends Component {
+import React, {useState} from 'react'
 
-  constructor() {
-    super()    
-      this.state = ({
-        title: "Meet Our Team" , 
+function Team() {
+    const [team, setTeam] = useState({
+        title: "Meet Our Team",
         name: "Bob",
-        job: "Junior Web Developer!",
-        image: <img id="bob"src={bob} alt="" /> ,
-        comment: "Let's code together folks! 💻"
-      });
-  }
-
-  nextEmployee() {
-    this.setState({      
-      name: "Kevin",
-      job: "Functional Tester",
-      image: <img id="kevin"src={kevin} alt="" /> ,
-      comment: 'Another bug... BOOOB! 😡😡😡' 
+        image: "/images/bob.png",
+        job: "Junior Web Developer",
+        comment: `" Let's code together 💻" `
     });
-  }
 
-  prevEmployee() {
-    this.setState({
-      title: "Meet Our Team" , 
-      name: "Bob",
-      job: "Junior Web Developer!",
-      image: <img id="bob"src={bob} alt="" /> ,
-      comment: "Let's code together folks! 💻"
-    });
-  }
-    
-  render() {
-    // Destruction
-    // const {title, name, job, image, comment} = this.state;
+    //Prev state
+    const prev = () => {
+        setTeam({
+            title: "Meet Our Team",
+            name: "Bob",
+            image: "/images/bob.png",
+            job: "Junior Web Developer",
+            comment: `" Let's code together 💻" `
+        });
+      };
 
-    return ( 
-      <div className='team_container'>
-        <div>
-          <button onClick={() => this.prevEmployee()} 
-                  id="btn_show" 
-                  title="Previous">◀</button>
+    const next = () => {
+        setTeam(previousState => {
+            return {...previousState,                
+                name: "Kevin",
+                image: "/images/kevin.png",
+                job: "Functional Tester",
+                comment: "Another bug... BOOOB! 😡😡😡"
+            }
+        });
+      };
+
+  return (
+    <div className='team_container'>
+        <button onClick={prev} id="btn_show">◀</button>
+        <div className='person'>
+            <h1>{team.title}</h1>
+            <h2>{team.name}</h2>
+            <img src={team.image} alt=""/>
+            <h2>{team.job}</h2>
+            <h3>{team.comment}</h3>
         </div>
-      <div className="person">  
-        <h1>{this.state.title}</h1>        
-        <h2>{this.state.name}</h2>
-        <h2>{this.state.image}</h2> 
-        <h2>{this.state.job}</h2>
-        <h3>{this.state.comment}</h3>
-      </div>
-        <div>
-          <button onClick={() => this.nextEmployee()} 
-                  id="btn_show" 
-                  title="Next">▶
-          </button>
-        </div>      
-      </div>
-    )
-  }
+        <button onClick={next} id="btn_show">▶</button>
+    </div>
+  )
 }
 
 export default Team

@@ -46,16 +46,15 @@ body::-webkit-scrollbar {
   
 }
 
-.person img{
-  animation: shake 0.5s;
-  animation-iteration-count: infinite; 
-}
 
 #kevin {
   /* border: 5px solid cornsilk; */
   border-radius: 50%;
   width: 350px;
   height: 350px;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite; 
+  
   
 }
 
@@ -84,7 +83,6 @@ body::-webkit-scrollbar {
 }
 
 /* SEARCHBAR */
-
 .searchbar input{
   background-color: white;
   border: 0;
@@ -145,11 +143,12 @@ body::-webkit-scrollbar {
   color: white; 
   cursor: pointer; 
   padding: 20px;
-  margin: 0 2rem 0 2rem;
+  margin: 0 2rem 2rem 2rem;
   border-radius: 10px; 
   font-size: 20px; 
   font-family: "Montserrat";
-  font-weight: 900;  
+  font-weight: 900; 
+ 
 }
 
 #btn_show:hover {
@@ -185,6 +184,7 @@ input[type=range] {
 
 .team_container {
   display: flex;
+  flex-direction:column;
   align-content: center;
   justify-content: center;
   align-items: center;

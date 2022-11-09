@@ -1,6 +1,6 @@
 ## React State
 
-<img src="https://i.ibb.co/m413nMz/kevin.png" alt="kevin" border="0" />
+<img src="https://i.ibb.co/WfMcxbn/kevin.png" alt="kevin" border="5">
 
 
 ## Next Steps

@@ -1,6 +1,6 @@
 ## React State
 
-<img src="https://i.ibb.co/WfMcxbn/kevin.png" width="260"/>
+<img src="https://i.ibb.co/WfMcxbn/kevin.png" width="350"/>
 
 
 ## Next Steps

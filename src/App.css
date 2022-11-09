@@ -32,6 +32,7 @@ body::-webkit-scrollbar {
   align-items: center;
   border: 3px solid #8d5dd1;
   min-height: 60vh;
+  margin-bottom: 10rem;
 }
 
 .products img {

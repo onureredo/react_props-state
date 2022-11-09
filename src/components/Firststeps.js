@@ -1,15 +1,13 @@
 import React, {useState} from 'react'
 
-function FavoriteColor() {
-    // FIRST EXAMPLE
+function Firststeps() {
+
     const [color, setColor] = useState("Black");
+    // const [brand, setBrand] = useState("Ford");
+    // const [model, setModel] = useState("Mustang");
+    // const [year, setYear] = useState("1964");
 
-    // SECOND EXAMPLE    
-    const [brand, setBrand] = useState("Ford");
-    const [model, setModel] = useState("Mustang");
-    const [year, setYear] = useState("1964");
-
-    // THIRD EXAMPLE
+//OR WE CAN JUST USE ONE STATE AND INCLUDE ALL OF THESE AS AN OBJECT
     const [car, setCar] = useState({
         brand: "Ford",
         model: "Mustang",
@@ -17,35 +15,35 @@ function FavoriteColor() {
         color: "red"
       });
 
-      // FOURTH EXAMPLE UPDATING OBJECTS AND ARRAYS IN STATE
+//UPDATING OBJECTS IN STATE
       const updateCar = () => {
-        setCar(previousState => {
-          return {...previousState, color: "Yellow", year: 1968}
-        });
+        setCar(prevState => {
+          return {
+            ...prevState,
+            color: "Black",            
+          }
+        })
       }
 
     return (   
         <div>
             {/* FIRST EXAMPLE */}
             <h1>My favorite Color is {color}!</h1>
-            <button onClick={() => setColor("Red")}>Red</button>
-            <button onClick={() => setColor("Blue")}>Blue</button>
+            <button id="btn_show" onClick={() => setColor("Red")}>RED</button>            
 
-            {/* SECOND EXAMPLE */}
-            <h1>My car is {brand}</h1>
-            <p>It is a {color} {model} from {year}.</p>
+            {/* SECOND EXAMPLE  */}
+            <h1>My car is {car.brand} and It is a {car.color} {car.model} from {car.year}</h1>
 
-            {/* THIRD EXAMPLE  */}
-            <h1>My car is {car.brand}</h1>
-            <p> It is a {car.color} {car.model} from {car.year}.</p>
+            {/* UPDATING ARRAY OBJECTS IN STATE WITHOUT SPREAD OPERATOR WOULD BE LIKE:*/}
+            <button id="btn_show" onClick={() => setCar({color: "blue"})}>UPDATE</button>
 
-            {/* FOURTH EXAMPLE UPDATING OBJECTS AND ARRAYS IN STATE */}
-            <button type="button" onClick={updateCar}>UPDATE</button>
+            {/* WITH SPREAD OPERATOR: */}
+            <button id="btn_show" onClick={updateCar}>UPDATE AGAIN</button>
         </div>
-  )
-}
+      )
+    }
 
-export default FavoriteColor
+export default Firststeps
 
 
 

@@ -1,9 +1,12 @@
-## React State
+#React State
+<img src="https://ibb.co/Zxt0QkT" style="width: 300px"/>
 
-## Notes
+## Next Steps
 
--
--
+- add Carousel
+- Fetch data from an API
+- finish search functionality
+- ...
 
 ## Docs and resources:
 

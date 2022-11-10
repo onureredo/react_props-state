@@ -21,7 +21,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-.app {
+.App {
   min-height: 100vh;
 }
 
@@ -35,46 +35,29 @@ body::-webkit-scrollbar {
   margin-bottom: 10rem;
 }
 
+.team_container {
+  display: flex;
+  flex-direction:column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #FFD55E;
+  margin: 15rem 0 7rem 0;
+}
+
 .products img {
   max-width: 60%;  
 }
 
 .person img {
-  border-radius: 50%;
-  width: 350px;
-  height: 350px;  
+  max-width: 60%; 
 }
 
 #kevin {
-  /* border: 5px solid cornsilk; */
-  border-radius: 50%;
-  width: 350px;
-  height: 350px;
   animation: shake 0.5s;
   animation-iteration-count: infinite;   
 }
 
-#bob {
-  /* border: 5px solid cornsilk; */
-  border-radius: 50%;
-  width: 350px;
-  height: 350px;
-}
-
-/* SHAKE ANIMATION*/
-@keyframes shake {
-  0% { transform: translate(3px, 3px) rotate(0deg); }
-  10% { transform: translate(-3px, -2px) rotate(-3deg); }
-  20% { transform: translate(-3px, 0px) rotate(3deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(3px, -3px) rotate(3deg); }
-  50% { transform: translate(-3px, 2px) rotate(-3deg); }
-  60% { transform: translate(-3px, 3px) rotate(0deg); }
-  70% { transform: translate(3px, 3px) rotate(-3deg); }
-  80% { transform: translate(-3px, -3px) rotate(3deg); }
-  90% { transform: translate(3px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
 
 /* SEARCHBAR */
 .searchbar input{
@@ -92,7 +75,7 @@ body::-webkit-scrollbar {
 /* BUTTONS */
 #btn_top {  
   position: fixed; 
-  bottom: 70px; 
+  bottom: 62px; 
   right: 20px; 
   z-index: 99; 
   border: none; 
@@ -102,7 +85,7 @@ body::-webkit-scrollbar {
   cursor: pointer; 
   padding: 10px; 
   border-radius: 50%; 
-  font-size: 25px; 
+  font-size: 1vw; 
 }
 
 #btn_top:hover {
@@ -122,7 +105,7 @@ body::-webkit-scrollbar {
   cursor: pointer; 
   padding: 10px; 
   border-radius: 50%; 
-  font-size: 25px; 
+  font-size: 1vw; 
 }
 
 #btn_down:hover {
@@ -136,13 +119,12 @@ body::-webkit-scrollbar {
   background-color: #8d5dd1;
   color: white; 
   cursor: pointer; 
-  padding: 20px;
+  padding: 1vw;
   margin: 0 2rem 2rem 2rem;
   border-radius: 10px; 
-  font-size: 20px; 
+  font-size: 1.25vw; 
   font-family: "Montserrat";
   font-weight: 900; 
- 
 }
 
 #btn_show:hover {
@@ -160,7 +142,7 @@ input[type=range] {
   transition: all 0.75s;
   -webkit-text-stroke: 3.5px #d6f4f4;
   font-variation-settings: "wght" 900, "ital" 1;
-  font-size: 4rem;
+  font-size: 3.8vw;
   text-align: center;
   color: transparent;
   font-family: "Meta", sans-serif;
@@ -176,19 +158,9 @@ input[type=range] {
   text-shadow: none; 
 }
 
-.team_container {
-  display: flex;
-  flex-direction:column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  margin: 5rem 0 5rem 0;
-  border: 3px solid #FFD55E; 
-}
-
 .team_container h1 {
   font-family: "Meta";
-  font-size: 3.5rem;  
+  font-size: 3vw;  
   color: white;
   transition: color 1.3s ease-in-out, box-shadow 1.3s ease-in-out;
   text-transform: uppercase;
@@ -198,28 +170,38 @@ input[type=range] {
 .team_container h1:hover {
   box-shadow: inset 1000px 0 0 0 #FFD55E;
   color: white;
-  cursor: default;  
-  
+  cursor: default;    
 }
 
-.team_container,
-.products h3 {
-  font-style:italic;
-  width: 100%;
+.products h1 {
+  font-size: 2vw;
 }
 
-.products h4 {
-  font-size: 1.15rem;
-  width: 100%;
+.products, .team_container h2 {
+  font-size: 1.75vw;
 }
 
-h2 {
-  font-size: 2.5rem;
-  width: 100%; 
+
+.products, .team_container h3 {
+  font-size: 1.2vw;
 }
 
-h3 {
-  font-size: 1.5rem;
-  width: 100%;
+.products, .team_container h4 {
+  font-size: 1vw;
+}
+
+/* SHAKE ANIMATION*/
+@keyframes shake {
+  0% { transform: translate(3px, 3px) rotate(0deg); }
+  10% { transform: translate(-3px, -2px) rotate(-3deg); }
+  20% { transform: translate(-3px, 0px) rotate(3deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(3px, -3px) rotate(3deg); }
+  50% { transform: translate(-3px, 2px) rotate(-3deg); }
+  60% { transform: translate(-3px, 3px) rotate(0deg); }
+  70% { transform: translate(3px, 3px) rotate(-3deg); }
+  80% { transform: translate(-3px, -3px) rotate(3deg); }
+  90% { transform: translate(3px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 

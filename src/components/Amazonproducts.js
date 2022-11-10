@@ -37,7 +37,7 @@ const Amazonproducts = () => {
                 <h1>{product.title}</h1>
                 <img src={product.image} alt="" />
                 <h3>{product.description}</h3>
-                <h4>Price: $ {product.price}</h4>
+                <h3>Price: $ {product.price}</h3>
               </div>
             )
           })

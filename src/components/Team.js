@@ -26,8 +26,8 @@ function Team() {
             <h1>{team.title}</h1>
             <h2>{team.name}</h2>
             <img src={team.image} id={team.name.toLowerCase()} alt=""/>
-            <h2>{team.job}</h2>
-            <h3>{team.comment}</h3>
+            <h3>{team.job}</h3>
+            <h4>{team.comment}</h4>
         </div>
         <button onClick={next} id="btn_show">NEXT</button>
     </div>

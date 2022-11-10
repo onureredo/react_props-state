@@ -1,13 +1,12 @@
 ## React State
 
-<img src="https://i.ibb.co/WfMcxbn/kevin.png" width="250"/>
-
+<img src="https://i.ibb.co/WfMcxbn/kevin.png" width="280"/>
 
 ## Next Steps
 
+- finish search functionality
 - add Carousel
 - Fetch data from an API
-- finish search functionality
 - ...
 
 ## Docs and resources:
@@ -22,8 +21,8 @@
 
 ## Methods we used
 
-- [Spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 - [.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 - [.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
 - [.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+- [... spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
 - [More Methods](https://www.codecademy.com/resources/docs/javascript/arrays/map?page_ref=catalog)

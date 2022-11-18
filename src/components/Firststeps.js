@@ -44,14 +44,3 @@ function Firststeps() {
     }
 
 export default Firststeps
-
-
-
-
-
-
-
-
-
-
-

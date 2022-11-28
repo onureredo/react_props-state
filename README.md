@@ -25,4 +25,4 @@
 - [.slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
 - [.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 - [... spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
-- [More Methods](https://www.codecademy.com/resources/docs/javascript/arrays/map?page_ref=catalog)
+- [More...](https://www.codecademy.com/resources/docs/javascript/arrays/map?page_ref=catalog)
